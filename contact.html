@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Extreme High School</title>
+<meta name="description" content="Contact Extreme High School, Namayumba — admissions, bursar's office and general enquiries.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="#143622"/>
+        <path d="M20 30V16C20 11 24 8 29 8" stroke="#E1A438" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20 24C16 24 12 21 11 16" stroke="#F1ECD9" stroke-width="2" stroke-linecap="round"/>
+        <path d="M9 33h22" stroke="#A6472A" stroke-width="2" stroke-linecap="round"/>
+        <path d="M12 30h16" stroke="#A6472A" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
+      </svg>
+      <span>EXTREME HIGH SCHOOL<small>Namayumba, Uganda</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      <li><a href="clubs.html">Clubs</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">We'd like to hear from you</span>
+    <h1>Contact us</h1>
+    <p>Reach admissions, the bursar's office, or send a general enquiry using the form below.</p>
+  </div>
+</section>
+
+<div class="furrow" aria-hidden="true"></div>
+
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow">Send a message</span>
+      <form id="contact-form">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Admissions, fees, a visit…">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="border:none;">Send message</button>
+        <p id="form-status" role="status" style="margin-top:0.9rem;font-size:0.9rem;color:var(--leaf-dark);" hidden></p>
+      </form>
+    </div>
+
+    <div>
+      <span class="eyebrow">Reach us directly</span>
+      <dl class="contact-details">
+        <dt>Address</dt>
+        <dd>Namayumba Trading Centre, Uganda</dd>
+        <dt>Admissions phone</dt>
+        <dd>+256 772 615 755</dd>
+        <dt>Bursar's office</dt>
+        <dd>+256 754 362 400</dd>
+        <dt>Email</dt>
+        <dd>info@extreme.example</dd>
+        <dt>Office hours</dt>
+        <dd>Monday – Friday, 8:00 – 5:00</dd>
+      </dl>
+      <iframe class="map-frame" title="Map showing Namayumba, Uganda" loading="lazy"
+        src="https://www.google.com/maps?q=Namayumba,Uganda&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<div class="furrow on-leaf" aria-hidden="true"></div>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <h4>Extreme High School</h4>
+      <p style="color:var(--paper-dim);">Namayumba Trading Centre, Uganda. A co-educational boarding school built around academics, agriculture and music.</p>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="fees.html">Fees structure</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Namayumba Trading Centre</li>
+        <li>info@extreme.example</li>
+        <li>+256 772 615 755</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="year"></span> Extreme High School, Namayumba</span>
+    <span>Site rebuilt for the school's GitHub Pages</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
